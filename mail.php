@@ -1,7 +1,7 @@
 <?php
-    $to = 'demo@spondonit.com';
+    $to = 'natalienuno@gmail.com';
     $firstname = $_POST["fname"];
-    $email= $_POST["email"];
+    $email= $_POST["email="];
     $text= $_POST["message"];
     $phone= $_POST["phone"];
     
