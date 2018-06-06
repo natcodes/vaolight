@@ -7636,8 +7636,13 @@ a.bg-dark:focus, a.bg-dark:hover {
   font-style: italic;
 }
 
-.text-white {
+.text-home {
   color: #9933FF !important;
+}
+
+.text-purple {
+  color: black !important;
+  font-size: 20pt !important;
 }
 
 .text-primary {

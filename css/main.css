@@ -562,8 +562,10 @@ td, th {
   font-style: italic;
 }
 
-.text-white {
-  color: #fff;
+.text-purple {
+  color: black !important;
+  font-size: 22px;
+
 }
 
 .transition {
