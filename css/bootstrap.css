@@ -3624,6 +3624,10 @@ tbody.collapse.show {
   color: #868e96;
 }
 
+.free {
+  font-size: 24pt;
+}
+
 .pagination {
   display: flex;
   padding-left: 0;
