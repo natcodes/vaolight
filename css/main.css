@@ -78,6 +78,10 @@ a {
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
+.addresslink {
+  font-weight: bolder;
+  color:black;
+}
 
 .hyperlink {
   color: black;
@@ -2452,9 +2456,7 @@ nav a:hover {
   font-weight: bolder;
 }
 
-.freelink {
-  color: purple  !important;
-}
+
 
 .contact-form :-ms-input-placeholder {
   color: #777777;
