@@ -39,7 +39,7 @@
 
 :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
-  color: #777777;
+  color: #63226e;
   font-weight: 300;
 }
 
@@ -2527,7 +2527,7 @@ nav a:hover {
 }
 
 .footer-social a {
-  background: #f9f9ff;
+  background: blue;
   padding: 12px 18px;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
@@ -2547,4 +2547,25 @@ nav a:hover {
   .footer-social {
     text-align: left;
   }
+  .top-social {
+    text-align: right;
+  }
+}
+
+
+.top-social a {
+  background:purple;
+  padding: 12px 18px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.top-social i {
+  color: #cccccc;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
