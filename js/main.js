@@ -97,7 +97,6 @@ $('a[href*="#"]')
 
 
     // -------   Mail Send ajax
-
      $(document).ready(function() {
         var form = $('#myForm'); // contact form
         var submit = $('.submit-btn'); // submit button
@@ -123,6 +122,7 @@ $('a[href*="#"]')
                 },
                 error: function(e) {
                     console.log(e)
+                    console.log("ajax in main.js")
                 }
             });
         });

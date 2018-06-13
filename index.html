@@ -1,6 +1,29 @@
 	<!DOCTYPE html>
 	<html lang="zxx" class="no-js">
 	<head>
+
+<!--===============================================================================================-->
+
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="contactfrom_v9/vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="contactfrom_v9/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="contactfrom_v9/fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="contactfrom_v9/vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="contactfrom_v9/vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="contactfrom_v9/vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="contactfrom_v9/vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="contactfrom_v9/vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="contactfrom_v9/css/util.css">
+	<link rel="stylesheet" type="text/css" href="contactfrom_v9/css/main.css">
+<!--===============================================================================================-->
 		<!-- Mobile Specific Meta -->
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<!-- Favicon-->
@@ -15,7 +38,7 @@
 		<meta charset="UTF-8">
 		<!-- Site Title -->
 		<title>Vaolight Music</title>
-		<link rel="icon" href="vaoimages/lion.png"> 
+		<link rel="icon" href="vaoimages/vaologo.jpg"> 
 		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
 			<!--
 			CSS
@@ -38,7 +61,7 @@
 					<div class="header-wrap">
 						<div class="header-top d-flex justify-content-between align-items-center">
 							<div class="logo">
-								<a href="#home"><img src="vaoimages/lion.png" alt=""></a>
+								<a href="#home"><img src="vaoimages/v2.png" alt=""></a>
 							</div>
 							<div class="main-menubar d-flex align-items-center">
 								<nav class="hide">
@@ -223,45 +246,48 @@
 			<!-- End About Area -->
 
 			<!-- Start contact Area -->
-			<section class="contact-area pt-100 pb-100" id="contact">
-				<div class="container">
-					<div class="row d-flex justify-content-center">
-						<div class="col-lg-4 title-section">
-							<h2 class="text-uppercase">
-								Send <br>
-								Us <br>
-								Message
-							</h2>
-							<p>
-								We won’t send any kind of spam
-							</p>
-						</div>
-						<div class="col-lg-8">
-							<form id="myForm" action="mail.php" method="post" class="contact-form">
-								<div class="row justify-content-center">
-									<div class="col-lg-6">
-										<input name="fname" placeholder="Enter your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" class="common-input mt-20" required="" type="text">
 
-										<input name="email" placeholder="Enter email address" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" class="common-input mt-20" required="" type="email">
-
-										<input name="phone" placeholder="Enter phone number"  onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter phone number'" class="common-input mt-20" required="" type="tel">
-									</div>
-									<div class="col-lg-6">
-										<textarea class="common-textarea mt-20" name="message" placeholder="Messege" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Messege'" required=""></textarea>
-
-										<button class="primary-btn d-inline-flex align-items-center mt-20"><span class="mr-10">Send Message</span><span class="lnr lnr-arrow-right"></span></button> <br>
-										<div class="alert-msg"></div>
-									</div>
-								</div>
-							</form>
-						</div>
+			<div class="container-contact100">
+					<div class="contact100-map" id="google_map" data-map-x="40.722047" data-map-y="-73.986422" data-pin="contactfrom_v9/images/icons/map-marker.png" data-scrollwhell="0" data-draggable="1"></div>
+					
+					<div class="wrap-contact100">
+						<form class="contact100-form validate-form" method="post" name="myemailform" action="form-to-email.php" >
+							<span class="contact100-form-title">
+								Contact Us
+							</span>
+							<div class="wrap-input100 validate-input" data-validate="Please enter your name">
+								<input class="input100" type="text" name="name" placeholder="Full Name">
+								<span class="focus-input100"></span>
+							</div>
+			
+							<div class="wrap-input100 validate-input" data-validate = "Please enter email: eye@am.xkj">
+								<input class="input100" type="text" name="email" placeholder="Email">
+								<span class="focus-input100"></span>
+							</div>
+			
+							<div class="wrap-input100 validate-input" data-validate = "Please enter your message">
+								<textarea class="input100" name="message" placeholder="Your Message"></textarea>
+								<span class="focus-input100"></span>
+							</div>
+			
+							<!-- <div class="container-contact100-form-btn"> -->
+							<input type="submit" class="contact100-form-btn" value="Send Email" name="myemailform">
+									<!-- Send Email -->								
+							<!-- </div> -->
+						
+			 
+					<!--	<div class="contact100-more">
+							Contact our 24/7 call center: <span class="contact100-more-highlight">+001 345 6889</span>
+						</div> -->
 					</div>
+				</form>
 				</div>
-			</section>
+			
+				<div id="dropDownSelect1"></div>
 			<!-- End contact Area -->
 
 
-			<!-- Strat Footer Area -->
+			<!-- Start Footer Area -->
 
 			<footer class="footer-area">
 				<div class="container">
@@ -283,6 +309,35 @@
 			</footer>
 
 			<!-- End Footer Area -->
+			<!--===============================================================================================-->
+	<script src="contactfrom_v9/vendor/jquery/jquery-3.2.1.min.js"></script>
+	<!--===============================================================================================-->
+		<script src="contactfrom_v9/vendor/animsition/js/animsition.min.js"></script>
+	<!--===============================================================================================-->
+		<script src="contactfrom_v9/vendor/bootstrap/js/popper.js"></script>
+		<script src="contactfrom_v9/vendor/bootstrap/js/bootstrap.min.js"></script>
+	<!--===============================================================================================-->
+		<script src="contactfrom_v9/vendor/select2/select2.min.js"></script>
+	<!--===============================================================================================-->
+		<script src="contactfrom_v9/vendor/daterangepicker/moment.min.js"></script>
+		<script src="contactfrom_v9/vendor/daterangepicker/daterangepicker.js"></script>
+	<!--===============================================================================================-->
+		<script src="contactfrom_v9/vendor/countdowntime/countdowntime.js"></script>
+	<!--===============================================================================================-->
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKFWBqlKAGCeS1rMVoaNlwyayu0e0YRes"></script>
+		<script src="contactfrom_v9/js/map-custom.js"></script>
+	<!--===============================================================================================-->
+		<script src="contactfrom_v9/js/main.js"></script>
+	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	
+	  gtag('config', 'UA-23581568-13');
+	</script>
 			<script src="js/vendor/jquery-2.2.4.min.js"></script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 			<script src="js/vendor/bootstrap.min.js"></script>
